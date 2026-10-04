@@ -1,224 +1,280 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" data-theme="dark">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Kenza El Baz — AI &amp; Data Science Engineer</title>
   <meta name="description" content="Kenza El Baz — AI & Data Science engineer taking machine learning from notebook to production. Based in Rabat, Morocco." />
-  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='24' fill='%23111'/><text x='50' y='66' font-size='52' text-anchor='middle' fill='white' font-family='Georgia,serif' font-style='italic'>k</text></svg>" />
+  <script>try{var t=localStorage.getItem("theme");if(t)document.documentElement.dataset.theme=t;}catch(e){}</script>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='24' fill='%23111'/><text x='50' y='68' font-size='56' text-anchor='middle' fill='white' font-family='Georgia,serif' font-style='italic'>k</text></svg>" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="styles.css" />
 </head>
-<body>
-  <div class="cursor" aria-hidden="true"><span>View</span></div>
+<body data-page="work">
+  <header class="header">
+    <a href="index.html" class="brand">
+      <strong>Kenza El Baz</strong>
+      <span>AI &amp; Data Science Engineer</span>
+    </a>
 
-  <header class="nav">
-    <a href="#top" class="nav__logo">Kenza El Baz</a>
-    <nav class="nav__links">
-      <a href="#work">Work</a>
-      <a href="#experience">Experience</a>
-      <a href="#about">About</a>
-      <a href="assets/Kenza_El_Baz_CV.pdf" target="_blank" rel="noopener">Resume</a>
+    <nav class="pill" aria-label="Main">
+      <span class="pill__glow" aria-hidden="true"></span>
+      <a href="index.html" class="is-current" aria-current="page">Work</a>
+      <a href="info.html">Info</a>
     </nav>
-    <a href="mailto:kenza0652@gmail.com" class="nav__cta">Say hello</a>
+
+    <div class="header__right">
+      <a href="https://linkedin.com/in/kenza-el-baz" target="_blank" rel="noopener" class="hide-sm">LinkedIn <span class="arr">↗</span></a>
+      <a href="assets/Kenza_El_Baz_CV.pdf" target="_blank" rel="noopener">Resume <span class="arr">↗</span></a>
+      <button class="theme-toggle" type="button" aria-label="Toggle dark mode">
+        <svg class="i-sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4.5"/><path d="M12 1.5v2.5M12 20v2.5M1.5 12H4M20 12h2.5M4.6 4.6l1.8 1.8M17.6 17.6l1.8 1.8M4.6 19.4l1.8-1.8M17.6 6.4l1.8-1.8"/></svg>
+        <svg class="i-moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.5 14.5A8.5 8.5 0 0 1 9.5 3.5a8.5 8.5 0 1 0 11 11z"/></svg>
+      </button>
+    </div>
   </header>
 
-  <main id="top">
+  <main class="wrap">
     <!-- HERO -->
     <section class="hero">
-      <div class="hero__status reveal"><span class="dot"></span> Open to a 4–6 month PFE internship · Feb – Aug 2027</div>
-      <h1 class="hero__title">
-        <span class="line"><span>Hi, I'm Kenza —</span></span>
-        <span class="line"><span>an <em>AI &amp; Data Science</em></span></span>
-        <span class="line"><span>engineer taking machine</span></span>
-        <span class="line"><span>learning from <em>notebook</em></span></span>
-        <span class="line"><span>to <em>production.</em></span></span>
-      </h1>
-      <div class="hero__meta reveal">
-        <p>Final-year engineering student at EMSI, Rabat. I pair deep learning and data analysis with full-stack delivery — from CNNs to Angular/.NET apps shipped in 8 weeks.</p>
-        <a href="#work" class="scroll-hint">Scroll to explore <span>↓</span></a>
+      <div class="frame">
+        <div class="frame__bar"><i></i><i></i><i></i><span>+</span></div>
+        <div class="hero__inner">
+          <h1 class="hero__title">
+            <span class="line"><span>I build models,</span></span>
+            <span class="line"><span>products &amp; <em>insights.</em></span></span>
+          </h1>
+          <div class="hero__sub fade">
+            <p>AI &amp; Data Science engineer. Based in Rabat.</p>
+            <p class="dim">Formerly at Torck and ANCFCC. Final year at EMSI.</p>
+          </div>
+          <a href="#work" class="hero__arrow" aria-label="Scroll to work">
+            <svg viewBox="0 0 24 40" aria-hidden="true"><path d="M12 2v34M3 27l9 9 9-9"/></svg>
+          </a>
+        </div>
       </div>
     </section>
-
-    <!-- MARQUEE -->
-    <div class="marquee" aria-hidden="true">
-      <div class="marquee__track">
-        <span>TensorFlow</span><i>✦</i><span>Keras</span><i>✦</i><span>Scikit-learn</span><i>✦</i><span>Pandas</span><i>✦</i><span>Computer Vision</span><i>✦</i><span>Angular</span><i>✦</i><span>.NET</span><i>✦</i><span>SQL</span><i>✦</i><span>React</span><i>✦</i><span>Django</span><i>✦</i>
-        <span>TensorFlow</span><i>✦</i><span>Keras</span><i>✦</i><span>Scikit-learn</span><i>✦</i><span>Pandas</span><i>✦</i><span>Computer Vision</span><i>✦</i><span>Angular</span><i>✦</i><span>.NET</span><i>✦</i><span>SQL</span><i>✦</i><span>React</span><i>✦</i><span>Django</span><i>✦</i>
-      </div>
-    </div>
 
     <!-- WORK -->
-    <section class="section" id="work">
-      <div class="section__head reveal">
-        <span class="eyebrow">Selected work</span>
-        <h2>Things I've <em>built</em></h2>
-      </div>
+    <section id="work" class="work">
 
-      <div class="work">
-        <article class="card card--wide reveal" data-cursor>
-          <div class="card__visual v-ats">
-            <div class="chat">
-              <div class="bubble bubble--user">How many candidates applied to the data roles last month?</div>
-              <div class="bubble bubble--bot">142 candidates applied across 3 data roles — up 18% from the previous month.</div>
-              <div class="bubble bubble--user">And how many of them reached interviews?</div>
-              <div class="bubble bubble--bot typing"><span></span><span></span><span></span></div>
+      <article class="card reveal" data-project="ats" tabindex="0" role="button" aria-label="Open Ask ATS details">
+        <div class="card__inner">
+          <div class="card__head">
+            <div>
+              <h2>Ask ATS</h2>
+              <p><b>Torck, '26</b> — Asking your hiring data questions in plain language.</p>
             </div>
+            <span class="card__arrow" aria-hidden="true">→</span>
           </div>
-          <div class="card__body">
-            <div class="card__tags"><span>Torck · 2026</span><span>NLP</span><span>Analytics</span></div>
-            <h3>Ask ATS</h3>
-            <p>A natural-language analytics assistant that answers questions in plain language, with multi-turn context so follow-ups build on earlier ones.</p>
-          </div>
-        </article>
-
-        <article class="card reveal" data-cursor>
-          <div class="card__visual v-cnn">
-            <div class="layers"><i></i><i></i><i></i><i></i><i></i></div>
-          </div>
-          <div class="card__body">
-            <div class="card__tags"><span>Deep learning</span><span>Python · TensorFlow</span></div>
-            <h3>Brain Tumor Classification</h3>
-            <p>A CNN trained on a Kaggle MRI dataset to classify brain tumors. I built the preprocessing pipeline, evaluated it with accuracy, loss and a confusion matrix, and reduced overfitting.</p>
-          </div>
-        </article>
-
-        <article class="card reveal" data-cursor>
-          <div class="card__visual v-enterprise">
-            <div class="window">
-              <div class="window__bar"><i></i><i></i><i></i></div>
-              <div class="window__metric"><small>SQL response time</small><strong>−30%</strong></div>
-              <div class="bars"><i style="--h:80%"></i><i style="--h:68%"></i><i style="--h:60%"></i><i style="--h:52%"></i><i style="--h:56%"></i></div>
+          <div class="mock">
+            <div class="browser">
+              <div class="browser__top"><i></i><i></i><i></i><span class="tab"></span></div>
+              <div class="browser__url"><span>←</span><span>→</span><span>↻</span><div></div></div>
+              <div class="screen s-ats">
+                <div class="ats__side">
+                  <b>Ask ATS</b>
+                  <span class="on">New chat</span><span>Hiring funnel</span><span>Data roles Q3</span><span>Time to hire</span>
+                </div>
+                <div class="ats__chat">
+                  <div class="msg msg--u">How many candidates applied to data roles last month?</div>
+                  <div class="msg msg--b">
+                    <span>142 candidates applied across 3 data roles, up 18% from the month before.</span>
+                    <div class="ats__bars"><i style="--h:46%"></i><i style="--h:62%"></i><i style="--h:54%"></i><i style="--h:88%"></i></div>
+                  </div>
+                  <div class="msg msg--u">And how many reached interviews?</div>
+                  <div class="msg msg--b typing"><i></i><i></i><i></i></div>
+                  <div class="ats__input">Ask anything about your candidates…<span>↑</span></div>
+                </div>
+              </div>
             </div>
-          </div>
-          <div class="card__body">
-            <div class="card__tags"><span>Torck · 2025</span><span>Angular 16 · .NET 7</span></div>
-            <h3>Enterprise Web Platform</h3>
-            <p>Shipped in 8 weeks with an Agile team of 4. I built a secure JWT-authenticated REST API with 12+ endpoints and cut SQL response times by 30%.</p>
-          </div>
-        </article>
-
-        <article class="card reveal" data-cursor>
-          <div class="card__visual v-eda">
-            <svg viewBox="0 0 200 120" class="scatter" aria-hidden="true">
-              <g></g>
-              <path d="M10 105 Q 80 80 190 18" />
-            </svg>
-          </div>
-          <div class="card__body">
-            <div class="card__tags"><span>Data</span><span>Pandas · Seaborn</span></div>
-            <h3>Exploratory Data Analysis Pipeline</h3>
-            <p>Cleaned large datasets with imputation and feature engineering, then ran statistical EDA with distribution and correlation plots.</p>
-          </div>
-        </article>
-
-        <article class="card reveal" data-cursor>
-          <div class="card__visual v-wumpus">
-            <div class="grid4">
-              <i></i><i class="pit"></i><i></i><i class="gold">✦</i>
-              <i></i><i></i><i class="wumpus"></i><i></i>
-              <i class="safe"></i><i></i><i></i><i class="pit"></i>
-              <i class="agent"></i><i class="safe"></i><i></i><i></i>
-            </div>
-          </div>
-          <div class="card__body">
-            <div class="card__tags"><span>AI</span><span>Propositional logic</span></div>
-            <h3>Knowledge-Based Agent: Wumpus World</h3>
-            <p>A logic-based agent that reasons over a knowledge base to plan safe, goal-oriented exploration.</p>
-          </div>
-        </article>
-
-        <article class="card card--wide reveal" data-cursor>
-          <div class="card__visual v-web">
-            <div class="mini"><b>Recipes</b><small>Role-based auth · CRUD</small><span>Laravel · MySQL</span></div>
-            <div class="mini"><b>Weather</b><small>Real-time dashboard SPA</small><span>React · TypeScript</span></div>
-            <div class="mini"><b>Sports Club</b><small>Management app</small><span>Django</span></div>
-          </div>
-          <div class="card__body">
-            <div class="card__tags"><span>Full-stack</span><span>Laravel · React · Django</span></div>
-            <h3>Web Applications</h3>
-            <p>A recipe platform with role-based auth, a real-time weather dashboard SPA and a sports club management app.</p>
-          </div>
-        </article>
-      </div>
-    </section>
-
-    <!-- EXPERIENCE -->
-    <section class="section" id="experience">
-      <div class="section__head reveal">
-        <span class="eyebrow">Experience</span>
-        <h2>Where I've <em>worked</em></h2>
-      </div>
-      <ul class="xp">
-        <li class="xp__item reveal">
-          <span class="xp__date">Jul – Aug 2026</span>
-          <div>
-            <h3>Software Engineering Intern <em>(returning)</em></h3>
-            <p class="xp__org">Torck (formerly Hahn Software) · Rabat</p>
-            <p>Built Ask ATS, a natural-language analytics assistant, and added multi-turn conversational context.</p>
-          </div>
-        </li>
-        <li class="xp__item reveal">
-          <span class="xp__date">Jul – Aug 2025</span>
-          <div>
-            <h3>Full-Stack Developer Intern (PFA)</h3>
-            <p class="xp__org">Torck (formerly Hahn Software) · Rabat</p>
-            <p>Delivered an Angular 16 / .NET 7 enterprise app in 8 weeks, with a JWT-secured REST API and SQL queries that ran 30% faster. Also modelled the database, wrote unit tests and deployed to staging.</p>
-          </div>
-        </li>
-        <li class="xp__item reveal">
-          <span class="xp__date">Jul 2023</span>
-          <div>
-            <h3>Systems &amp; Database Intern</h3>
-            <p class="xp__org">ANCFCC — National Land Registry Agency · Rabat</p>
-            <p>Analyzed Oracle cadastral databases holding millions of land records, contributed to a security audit of the procedures that protect citizen data, and wrote a best-practices report.</p>
-          </div>
-        </li>
-      </ul>
-    </section>
-
-    <!-- ABOUT -->
-    <section class="section about" id="about">
-      <div class="section__head reveal">
-        <span class="eyebrow">About</span>
-        <h2>A little more <em>about me</em></h2>
-      </div>
-      <div class="about__grid">
-        <div class="about__text reveal">
-          <p class="lead">I'm a 5th-year Computer Science engineering student specializing in <em>Artificial Intelligence &amp; Data Science</em> at EMSI in Rabat.</p>
-          <p>I like the whole journey of a model: cleaning messy data, training and evaluating, and then wrapping it in software people actually use. Outside of code, I'm an EMSI Student Ambassador and Media Manager of the BDE student union.</p>
-          <div class="facts">
-            <div><strong>3</strong><span>Languages · Arabic, French C2, English C2</span></div>
-            <div><strong>7</strong><span>Certifications · IBM, UCSD, EPFL, HKUST, Google, Meta, Johns Hopkins</span></div>
-            <div><strong>30%</strong><span>Faster SQL responses in production</span></div>
           </div>
         </div>
-        <div class="skills reveal">
-          <div class="skill"><h4>Machine Learning &amp; AI</h4><p>Deep Learning, CNNs, TensorFlow, Keras, Scikit-learn, Computer Vision, Model Evaluation</p></div>
-          <div class="skill"><h4>Data</h4><p>Python, Pandas, NumPy, EDA, Feature Engineering, Preprocessing, Matplotlib, Seaborn</p></div>
-          <div class="skill"><h4>Databases</h4><p>SQL, Query Optimization, Relational Design, Oracle, MySQL, PostgreSQL</p></div>
-          <div class="skill"><h4>Software Engineering</h4><p>REST APIs, JWT, .NET 7, Angular 16, React, TypeScript, Django, Laravel, Node.js</p></div>
-          <div class="skill"><h4>Languages &amp; Tools</h4><p>C/C++, JavaScript, Git, Linux, Unit Testing, Agile / Scrum</p></div>
+      </article>
+
+      <article class="card reveal" data-project="enterprise" tabindex="0" role="button" aria-label="Open Enterprise Web Platform details">
+        <div class="card__inner">
+          <div class="card__head">
+            <div>
+              <h2>Enterprise Web Platform</h2>
+              <p><b>Torck, '25</b> — Shipped in 8 weeks, with SQL queries running 30% faster.</p>
+            </div>
+            <span class="card__arrow" aria-hidden="true">→</span>
+          </div>
+          <div class="mock">
+            <div class="browser browser--light">
+              <div class="browser__top"><i></i><i></i><i></i><span class="tab"></span></div>
+              <div class="browser__url"><span>←</span><span>→</span><span>↻</span><div></div></div>
+              <div class="screen s-ent">
+                <div class="ent__nav"><b>◆ Workspace</b><span>Dashboard</span><span>Requests</span><span>Reports</span><em>JWT · secured</em></div>
+                <div class="ent__kpis">
+                  <div><small>Avg. query time</small><strong>142ms</strong><span class="good">↓ 30%</span></div>
+                  <div><small>API endpoints</small><strong>12+</strong><span>REST · JWT</span></div>
+                  <div><small>Sprint</small><strong>8 / 8</strong><span class="good">Delivered</span></div>
+                </div>
+                <div class="ent__table">
+                  <div class="row head"><span>Request</span><span>Owner</span><span>Status</span><span>Updated</span></div>
+                  <div class="row"><span>Access review</span><span>Team A</span><span><em class="st ok">Approved</em></span><span>Aug 12</span></div>
+                  <div class="row"><span>Data export</span><span>Team B</span><span><em class="st pend">Pending</em></span><span>Aug 10</span></div>
+                  <div class="row"><span>Role change</span><span>Team A</span><span><em class="st no">Declined</em></span><span>Aug 07</span></div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-      </div>
+      </article>
+
+      <article class="card reveal" data-project="cnn" tabindex="0" role="button" aria-label="Open Brain Tumor Classification details">
+        <div class="card__inner">
+          <div class="card__head">
+            <div>
+              <h2>Brain Tumor Classification</h2>
+              <p><b>Deep learning</b> — A CNN that reads MRI scans and classifies tumors.</p>
+            </div>
+            <span class="card__arrow" aria-hidden="true">→</span>
+          </div>
+          <div class="mock">
+            <div class="browser">
+              <div class="browser__top"><i></i><i></i><i></i><span class="tab"></span></div>
+              <div class="browser__url"><span>←</span><span>→</span><span>↻</span><div></div></div>
+              <div class="screen s-cnn">
+                <div class="mri"><div class="mri__brain"><span class="mri__spot"></span></div><div class="mri__scan"></div></div>
+                <div class="cnn__right">
+                  <div class="cnn__layers"><i></i><i></i><i></i><i></i><i></i><b>→</b></div>
+                  <div class="preds">
+                    <div><span>Glioma</span><div class="bar"><i style="--p:91%"></i></div><b>0.91</b></div>
+                    <div><span>Meningioma</span><div class="bar"><i style="--p:6%"></i></div><b>0.06</b></div>
+                    <div><span>Pituitary</span><div class="bar"><i style="--p:2%"></i></div><b>0.02</b></div>
+                    <div><span>No tumor</span><div class="bar"><i style="--p:1%"></i></div><b>0.01</b></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <article class="card reveal" data-project="eda" tabindex="0" role="button" aria-label="Open Exploratory Data Analysis details">
+        <div class="card__inner">
+          <div class="card__head">
+            <div>
+              <h2>Exploratory Data Analysis Pipeline</h2>
+              <p><b>Data</b> — Turning large, messy datasets into clean features and clear plots.</p>
+            </div>
+            <span class="card__arrow" aria-hidden="true">→</span>
+          </div>
+          <div class="mock">
+            <div class="browser browser--light">
+              <div class="browser__top"><i></i><i></i><i></i><span class="tab"></span></div>
+              <div class="browser__url"><span>←</span><span>→</span><span>↻</span><div></div></div>
+              <div class="screen s-eda">
+                <div class="nb">
+                  <div class="cell"><span>[3]</span><code><b>df</b> = df.fillna(df.median())<br/><b>sns</b>.scatterplot(data=df, x=<em>"x"</em>, y=<em>"y"</em>)</code></div>
+                  <div class="plots">
+                    <svg viewBox="0 0 200 120" class="scatter" aria-hidden="true"><g></g><path d="M10 105 Q 80 80 190 18" /></svg>
+                    <div class="heat"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <article class="card reveal" data-project="wumpus" tabindex="0" role="button" aria-label="Open Wumpus World agent details">
+        <div class="card__inner">
+          <div class="card__head">
+            <div>
+              <h2>Wumpus World Agent</h2>
+              <p><b>AI</b> — A logic-based agent that reasons its way to the gold safely.</p>
+            </div>
+            <span class="card__arrow" aria-hidden="true">→</span>
+          </div>
+          <div class="mock">
+            <div class="browser">
+              <div class="browser__top"><i></i><i></i><i></i><span class="tab"></span></div>
+              <div class="browser__url"><span>←</span><span>→</span><span>↻</span><div></div></div>
+              <div class="screen s-wumpus">
+                <div class="grid4">
+                  <i></i><i class="pit">pit</i><i class="breeze">≈</i><i class="gold">✦</i>
+                  <i class="stench">~</i><i></i><i class="wumpus">W</i><i class="breeze">≈</i>
+                  <i class="safe">✓</i><i class="stench">~</i><i class="breeze">≈</i><i class="pit">pit</i>
+                  <i class="agent">A</i><i class="safe">✓</i><i class="breeze">≈</i><i></i>
+                </div>
+                <div class="kb">
+                  <small>Knowledge base</small>
+                  <code>¬P₁,₁ ∧ ¬W₁,₁</code>
+                  <code>B₂,₁ ⇔ P₃,₁ ∨ P₂,₂</code>
+                  <code>S₁,₂ ⇒ W₁,₃ ∨ W₂,₂</code>
+                  <code class="ok">⊢ OK₂,₁ — move →</code>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <article class="card reveal" data-project="web" tabindex="0" role="button" aria-label="Open Web Applications details">
+        <div class="card__inner">
+          <div class="card__head">
+            <div>
+              <h2>Web Applications</h2>
+              <p><b>Full-stack</b> — A recipe platform, a weather dashboard and a sports club app.</p>
+            </div>
+            <span class="card__arrow" aria-hidden="true">→</span>
+          </div>
+          <div class="mock">
+            <div class="browser browser--light">
+              <div class="browser__top"><i></i><i></i><i></i><span class="tab"></span></div>
+              <div class="browser__url"><span>←</span><span>→</span><span>↻</span><div></div></div>
+              <div class="screen s-web">
+                <div class="mini"><div class="mini__img m1"></div><b>Recipes</b><small>Role-based auth · CRUD</small><span>Laravel · MySQL</span></div>
+                <div class="mini"><div class="mini__img m2"><strong>24°</strong><small>Rabat · Sunny</small></div><b>Weather</b><small>Real-time dashboard SPA</small><span>React · TypeScript</span></div>
+                <div class="mini"><div class="mini__img m3"></div><b>Sports Club</b><small>Members &amp; events</small><span>Django</span></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </article>
     </section>
   </main>
 
-  <!-- FOOTER / CONTACT -->
-  <footer class="footer" id="contact">
-    <span class="eyebrow reveal">What's next?</span>
-    <h2 class="footer__title reveal">Let's build something<br /><em>intelligent</em> together.</h2>
-    <a class="footer__mail reveal" href="mailto:kenza0652@gmail.com">kenza0652@gmail.com <span>↗</span></a>
-    <div class="footer__bottom">
-      <span>© <span id="year"></span> Kenza El Baz · Rabat, Morocco</span>
-      <div class="footer__links">
-        <a href="https://linkedin.com/in/kenza-el-baz" target="_blank" rel="noopener">LinkedIn</a>
-        <a href="https://github.com/kenza-elbaz" target="_blank" rel="noopener">GitHub</a>
-        <a href="assets/Kenza_El_Baz_CV.pdf" target="_blank" rel="noopener">Resume</a>
+  <!-- PROJECT DETAILS -->
+  <dialog class="sheet" aria-labelledby="sheet-title">
+    <div class="sheet__inner">
+      <button class="sheet__close" type="button" aria-label="Close">✕</button>
+      <span class="sheet__meta"></span>
+      <h3 id="sheet-title"></h3>
+      <p class="sheet__lead"></p>
+      <ul class="sheet__list"></ul>
+      <div class="sheet__tags"></div>
+    </div>
+  </dialog>
+
+  <footer class="footer">
+    <div class="footer__inner">
+      <div class="footer__cols">
+        <div>
+          <span class="label">Main</span>
+          <a href="index.html">Work</a>
+          <a href="info.html">Info</a>
+        </div>
+        <div>
+          <span class="label">Contact</span>
+          <a href="https://linkedin.com/in/kenza-el-baz" target="_blank" rel="noopener">LinkedIn <span class="arr">↗</span></a>
+          <a href="https://github.com/kenza-elbaz" target="_blank" rel="noopener">GitHub <span class="arr">↗</span></a>
+          <a href="mailto:kenza0652@gmail.com">Email <span class="arr">↗</span></a>
+          <a href="assets/Kenza_El_Baz_CV.pdf" target="_blank" rel="noopener">Resume <span class="arr">↗</span></a>
+        </div>
       </div>
-      <span id="clock"></span>
+      <div class="footer__bottom">
+        <div>
+          <p class="strong">© <span class="year"></span> Kenza El Baz. All Rights Reserved.</p>
+          <p class="dim">Made in Rabat with mint tea and a lot of <code>model.fit()</code>.</p>
+        </div>
+        <p class="dim">Open to a PFE internship · Feb – Aug 2027 <span class="dot"></span></p>
+      </div>
     </div>
   </footer>
 

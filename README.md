@@ -1,5 +1,11 @@
 # Kenza El Baz — Portfolio
 
-A static personal portfolio site (HTML, CSS and vanilla JS) with smooth scrolling (Lenis), scroll-reveal animations, a skills marquee and a custom cursor on project cards.
+A static personal portfolio (HTML, CSS and vanilla JS, no build step).
+
+- `index.html`: Work page with a browser-frame hero and project cards (click a card for details)
+- `info.html`: experience, skills, education, certifications and CV links
+- `assets/Kenza_El_Baz_CV.pdf`: the CV linked from the header, the Info page and the footer
+
+Dark mode is the default; the sun/moon button switches to light mode and remembers the choice.
 
 Open `index.html` in a browser to run it, or deploy the folder as-is to GitHub Pages, Netlify or Vercel.
