@@ -421,6 +421,7 @@ a:hover .arr { transform: translate(2px, -2px); }
 .xp__org { color: var(--accent); font-size: 14px; margin: 4px 0 10px; }
 .xp li > p:last-child, .edu > p { max-width: 720px; }
 .edu > p { margin-top: 6px; }
+.edu + .edu { margin-top: 28px; padding-top: 28px; border-top: 1px solid var(--line); }
 .skills { display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; }
 .skills > div { padding: 20px; border-radius: 18px; border: 1px solid var(--line); background: var(--bg-2); transition: border-color .3s, transform .4s var(--ease); }
 .skills > div:hover { border-color: var(--line-2); transform: translateY(-3px); }
