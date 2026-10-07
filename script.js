@@ -13,6 +13,24 @@
     });
   });
 
+  // ---------- Resume language menu ----------
+  document.querySelectorAll(".cv-menu").forEach((menu) => {
+    const btn = menu.querySelector(".cv-menu__btn");
+    const setOpen = (open) => {
+      menu.classList.toggle("is-open", open);
+      btn.setAttribute("aria-expanded", String(open));
+    };
+    btn.addEventListener("click", (e) => {
+      e.stopPropagation();
+      setOpen(!menu.classList.contains("is-open"));
+    });
+    menu.querySelectorAll("a").forEach((a) => a.addEventListener("click", () => setOpen(false)));
+    document.addEventListener("click", (e) => { if (!menu.contains(e.target)) setOpen(false); });
+    document.addEventListener("keydown", (e) => {
+      if (e.key === "Escape" && menu.classList.contains("is-open")) { setOpen(false); btn.focus(); }
+    });
+  });
+
   // ---------- Smooth scrolling ----------
   let lenis = null;
   if (window.Lenis && !reduceMotion) {
@@ -88,15 +106,16 @@
       tags: ["Angular 16", ".NET 7", "SQL", "JWT", "Agile"],
     },
     cnn: {
-      meta: "Deep learning project",
-      title: "Brain Tumor Classification",
-      lead: "A convolutional neural network that classifies brain tumors from a Kaggle MRI dataset.",
+      meta: "Deep learning project · End-to-end ML pipeline",
+      title: "Brain Tumor Classification from MRI",
+      lead: "An end-to-end pipeline that classifies brain tumors from MRI scans, from dataset audit to a deployed inference API.",
       points: [
-        "Trained a CNN with convolutional, pooling and dense layers",
-        "Built the preprocessing pipeline for the MRI images",
-        "Evaluated with accuracy, loss and a confusion matrix, and reduced overfitting",
+        "Audited 5,864 MRI scans for duplicates and train/test leakage, and built reproducible group-based splits",
+        "Trained EfficientNet-B0 in PyTorch: 0.9746 macro-F1 and 97.84% test accuracy",
+        "Evaluated with a confusion matrix, error analysis and Grad-CAM explainability",
+        "Served the model through a FastAPI inference API, with a Docker deployment setup",
       ],
-      tags: ["Python", "TensorFlow", "Keras", "Computer Vision"],
+      tags: ["Python", "PyTorch", "EfficientNet-B0", "Scikit-learn", "Grad-CAM", "FastAPI", "Docker"],
     },
     eda: {
       meta: "Data project",

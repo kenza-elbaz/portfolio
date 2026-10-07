@@ -27,7 +27,13 @@
 
     <div class="header__right">
       <a href="https://www.linkedin.com/in/kenza-el-baz-750399256/" target="_blank" rel="noopener" class="hide-sm">LinkedIn <span class="arr">↗</span></a>
-      <a href="assets/Kenza_El_Baz_CV.pdf" target="_blank" rel="noopener">Resume <span class="arr">↗</span></a>
+      <div class="cv-menu">
+        <button type="button" class="cv-menu__btn" aria-expanded="false" aria-haspopup="true">Resume <span class="caret">▾</span></button>
+        <div class="cv-menu__list" role="menu">
+          <a role="menuitem" href="assets/Kenza_El_Baz_CV_EN.pdf" target="_blank" rel="noopener"><span>English</span><small>EN</small></a>
+          <a role="menuitem" href="assets/Kenza_El_Baz_CV_FR.pdf" target="_blank" rel="noopener"><span>Français</span><small>FR</small></a>
+        </div>
+      </div>
       <button class="theme-toggle" type="button" aria-label="Toggle dark mode">
         <svg class="i-sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4.5"/><path d="M12 1.5v2.5M12 20v2.5M1.5 12H4M20 12h2.5M4.6 4.6l1.8 1.8M17.6 17.6l1.8 1.8M4.6 19.4l1.8-1.8M17.6 6.4l1.8-1.8"/></svg>
         <svg class="i-moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.5 14.5A8.5 8.5 0 0 1 9.5 3.5a8.5 8.5 0 1 0 11 11z"/></svg>
@@ -47,9 +53,9 @@
         <p class="dim">I pair deep learning and data analysis (TensorFlow/Keras, Scikit-learn, Pandas) with full-stack delivery. I've built a natural-language analytics assistant, shipped an enterprise Angular/.NET app in 8 weeks, and cut SQL response times by 30%.</p>
         <p class="dim">Right now I'm looking for a <b>4–6 month PFE internship (Feb – Aug 2027)</b>.</p>
         <div class="btns">
-          <a class="btn btn--solid" href="assets/Kenza_El_Baz_CV.pdf" target="_blank" rel="noopener">View my CV <span class="arr">↗</span></a>
-          <a class="btn" href="assets/Kenza_El_Baz_CV.pdf" download>Download PDF <span class="arr">↓</span></a>
-          <a class="btn" href="mailto:kenza0652@gmail.com">kenza0652@gmail.com</a>
+          <a class="btn btn--solid" href="assets/Kenza_El_Baz_CV_EN.pdf" target="_blank" rel="noopener">CV in English <span class="arr">↗</span></a>
+          <a class="btn" href="assets/Kenza_El_Baz_CV_FR.pdf" target="_blank" rel="noopener">CV en français <span class="arr">↗</span></a>
+          <a class="btn" href="mailto:kenzaelbaz0652@gmail.com">kenzaelbaz0652@gmail.com</a>
         </div>
       </div>
     </section>
@@ -58,7 +64,7 @@
       <span class="label">Experience</span>
       <ul class="xp">
         <li>
-          <div class="xp__top"><h3>Software Engineering Intern <span class="dim">· Returning</span></h3><span class="dim">Jul – Aug 2026</span></div>
+          <div class="xp__top"><h3>Software Engineering Intern <span class="dim">· Returning</span></h3><span class="dim">Jul – Sep 2026</span></div>
           <p class="xp__org">Torck (formerly Hahn Software) · Rabat</p>
           <p class="dim">Built Ask ATS, a natural-language analytics assistant that answers questions in plain language, and added multi-turn conversational context so follow-up questions build on earlier ones.</p>
         </li>
@@ -78,12 +84,12 @@
     <section class="block reveal">
       <span class="label">Skills</span>
       <div class="skills">
-        <div><h4>Machine Learning &amp; AI</h4><p>Deep Learning, CNNs, TensorFlow, Keras, Scikit-learn, Computer Vision, Model Evaluation</p></div>
-        <div><h4>Data</h4><p>Python, Pandas, NumPy, EDA, Feature Engineering, Data Preprocessing, Matplotlib, Seaborn</p></div>
-        <div><h4>Databases</h4><p>SQL, Query Optimization, Relational Database Design, Oracle, MySQL, PostgreSQL</p></div>
-        <div><h4>Software Engineering</h4><p>REST APIs, JWT, .NET 7, Angular 16, React, TypeScript, Django, Laravel, Node.js</p></div>
-        <div><h4>Languages &amp; Tools</h4><p>C/C++, JavaScript, Git, Linux, Unit Testing, Agile / Scrum</p></div>
-        <div><h4>Languages</h4><p>Arabic (native), French (C2), English (C2)</p></div>
+        <div><h4>Machine Learning &amp; AI</h4><p>PyTorch, EfficientNet, CNNs, Computer Vision, Scikit-learn, Model Evaluation (macro-F1, confusion matrix, error analysis), Grad-CAM, TensorFlow, Keras</p></div>
+        <div><h4>Data</h4><p>Python, Pandas, NumPy, Data Preprocessing, Dataset Auditing, Feature Engineering, EDA, Matplotlib, Seaborn</p></div>
+        <div><h4>Deployment &amp; Backend</h4><p>FastAPI, Docker, REST APIs, JWT, .NET 7, Django, Node.js</p></div>
+        <div><h4>Databases</h4><p>SQL, Query Optimization, Relational Database Design, PostgreSQL, MySQL, Oracle</p></div>
+        <div><h4>Tools &amp; Languages</h4><p>Git, Linux, Unit Testing, Agile / Scrum, C/C++, JavaScript, TypeScript, Angular, React</p></div>
+        <div><h4>Spoken Languages</h4><p>Arabic (native), French (fluent), English (C2)</p></div>
       </div>
     </section>
 
@@ -102,12 +108,11 @@
     <section class="block reveal">
       <span class="label">Certifications &amp; Leadership</span>
       <div class="chips">
+        <span>Oracle · Autonomous AI Database Certified Professional</span>
         <span>IBM · Python for Data Science &amp; AI</span>
         <span>UCSD · Big Data</span>
-        <span>EPFL · OOP in C++</span>
         <span>HKUST · Software Engineering</span>
         <span>Google · Agile Project Management</span>
-        <span>Meta · React</span>
         <span>Johns Hopkins · Unix/Linux</span>
         <span class="alt">EMSI Student Ambassador</span>
         <span class="alt">Media Manager · BDE EMSI</span>
@@ -118,9 +123,12 @@
       <div class="card__inner">
         <div>
           <h2>Want the full picture?</h2>
-          <p class="dim">Everything above on one page, ready to print.</p>
+          <p class="dim">Everything above on one page, ready to print. Available in English and French.</p>
         </div>
-        <a class="btn btn--solid" href="assets/Kenza_El_Baz_CV.pdf" target="_blank" rel="noopener">Open my CV <span class="arr">↗</span></a>
+        <div class="btns">
+          <a class="btn btn--solid" href="assets/Kenza_El_Baz_CV_EN.pdf" target="_blank" rel="noopener">English <span class="arr">↗</span></a>
+          <a class="btn" href="assets/Kenza_El_Baz_CV_FR.pdf" target="_blank" rel="noopener">Français <span class="arr">↗</span></a>
+        </div>
       </div>
     </section>
   </main>
@@ -137,8 +145,9 @@
           <span class="label">Contact</span>
           <a href="https://www.linkedin.com/in/kenza-el-baz-750399256/" target="_blank" rel="noopener">LinkedIn <span class="arr">↗</span></a>
           <a href="https://github.com/kenza-elbaz" target="_blank" rel="noopener">GitHub <span class="arr">↗</span></a>
-          <a href="mailto:kenza0652@gmail.com">Email <span class="arr">↗</span></a>
-          <a href="assets/Kenza_El_Baz_CV.pdf" target="_blank" rel="noopener">Resume <span class="arr">↗</span></a>
+          <a href="mailto:kenzaelbaz0652@gmail.com">Email <span class="arr">↗</span></a>
+          <a href="assets/Kenza_El_Baz_CV_EN.pdf" target="_blank" rel="noopener">Resume (English) <span class="arr">↗</span></a>
+          <a href="assets/Kenza_El_Baz_CV_FR.pdf" target="_blank" rel="noopener">CV (Français) <span class="arr">↗</span></a>
         </div>
       </div>
       <div class="footer__bottom">

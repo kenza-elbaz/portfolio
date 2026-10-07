@@ -1,0 +1,230 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<title>Kenza El Baz — CV (English)</title>
+<link rel="stylesheet" href="fonts.css" />
+<style>
+  @page { size: A4; margin: 0; }
+  :root { --ink: #07113c; --body: #1f2748; --band: #dce1f5; --soft: #f5f7ff; --icon: #3c4ea6; }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html, body { width: 595.28pt; height: 841.89pt; }
+  body {
+    position: relative; overflow: hidden;
+    font-family: "Raleway", sans-serif; font-weight: 500; color: var(--body);
+    -webkit-print-color-adjust: exact; print-color-adjust: exact;
+  }
+  a { color: inherit; text-decoration: none; }
+  b, strong { font-weight: 700; color: var(--ink); }
+
+  /* ---------- Header ---------- */
+  .band { position: absolute; inset: 0 0 auto 0; height: 140pt; background: var(--band); }
+  .photo { position: absolute; left: 48pt; top: 52pt; width: 131pt; height: 142pt; object-fit: cover; }
+  .name {
+    position: absolute; left: 236pt; top: 27.5pt;
+    font-family: "Fahkwang", serif; font-weight: 400; font-size: 31.5pt; line-height: 30pt;
+    letter-spacing: .045em; color: var(--ink);
+  }
+  .role {
+    position: absolute; left: 235pt; top: 113.5pt;
+    font-weight: 700; font-size: 9.6pt; letter-spacing: .02em; color: var(--ink);
+  }
+  .summary {
+    position: absolute; left: 235pt; top: 140pt; width: 342pt;
+    font-size: 8.25pt; line-height: 12pt;
+  }
+
+  /* ---------- Columns ---------- */
+  .left { position: absolute; left: 21pt; top: 208pt; width: 199pt; }
+  .right { position: absolute; left: 230pt; top: 219pt; width: 352pt; }
+
+  .h {
+    font-family: "Fahkwang", serif; font-weight: 600; font-size: 13.4pt; letter-spacing: .05em;
+    color: var(--ink); line-height: 1.25; text-transform: uppercase;
+  }
+  .h--plain { padding-left: 8pt; }
+  .box { background: var(--soft); padding: 8pt 8pt 10pt; }
+  .box .chip { display: inline-block; background: #fff; padding: 2pt 6pt 1pt; margin-left: -2pt; font-size: 12.2pt; }
+  .h--right { display: inline-block; background: var(--soft); padding: 3pt 5pt 2pt; font-size: 14pt; }
+
+  /* Contact */
+  .contact { list-style: none; margin: 13pt 0 0 7pt; display: flex; flex-direction: column; gap: 6.6pt; font-size: 8.9pt; line-height: 10.6pt; }
+  .contact li { display: grid; grid-template-columns: 23pt 1fr; align-items: start; }
+  .contact svg { width: 10.5pt; height: 10.5pt; fill: var(--icon); margin-top: .2pt; }
+  .contact .wrap { max-width: 150pt; word-break: break-all; }
+
+  /* Education */
+  .edu-title { font-weight: 700; font-size: 7.9pt; line-height: 10.5pt; letter-spacing: .03em; color: var(--ink); text-transform: uppercase; margin-top: 10pt; padding-left: 0; }
+  .edu-deg { font-style: italic; font-size: 8.8pt; line-height: 12pt; margin-top: 3pt; }
+  .edu-when { font-weight: 600; font-size: 6.9pt; margin-top: 3pt; color: var(--ink); }
+  .edu-block + .edu-block .edu-title { margin-top: 8pt; }
+
+  /* Certifications */
+  .certs { margin-top: 6pt; padding: 7pt 3pt 7pt 10.5pt; font-size: 8pt; line-height: 11pt; }
+  .certs ul { list-style: none; font-size: 7.3pt; line-height: 10.8pt; }
+  .certs ul li::before { content: "• "; }
+  .certs p + p { margin-top: 2.5pt; }
+
+  /* Languages */
+  .langs { list-style: none; margin-top: 5pt; font-size: 8.9pt; line-height: 15.9pt; padding-left: 1pt; }
+
+  /* Involvement */
+  .involve { list-style: none; margin: 8pt 0 0 8.8pt; font-size: 8.25pt; line-height: 15pt; }
+
+  /* Right column items */
+  .sec { margin-bottom: 9pt; }
+  .item { margin-top: 7.5pt; padding-left: 5pt; }
+  .item-title { font-weight: 700; font-size: 8.9pt; line-height: 11pt; color: var(--ink); text-transform: uppercase; letter-spacing: .01em; }
+  .item-title span { font-weight: 500; text-transform: none; }
+  .item-sub { font-size: 7.9pt; line-height: 12pt; margin-top: 1pt; }
+  .item-sub i { font-style: italic; }
+  .item-sub .caps { font-weight: 700; color: var(--ink); text-transform: uppercase; letter-spacing: .02em; }
+  .item-row { display: flex; justify-content: space-between; align-items: baseline; margin-top: 3.3pt; }
+  .item-row .caps { font-weight: 700; font-size: 7.9pt; color: var(--ink); text-transform: uppercase; letter-spacing: .02em; }
+  .item-row .date { white-space: nowrap; font-weight: 700; font-size: 8.9pt; color: var(--ink); padding-right: 3pt; }
+  .bul { list-style: none; margin-top: 2.6pt; padding-left: 14.2pt; font-size: 7.95pt; line-height: 10.85pt; }
+  .bul li { position: relative; margin-bottom: .6pt; }
+  .bul li::before { content: ""; position: absolute; left: -9.6pt; top: 3.7pt; width: 3.6pt; height: 3.6pt; border-radius: 50%; background: var(--ink); }
+
+  .skills-h { font-weight: 700; font-size: 11pt; letter-spacing: .02em; color: var(--ink); text-transform: uppercase; padding-left: 7pt; margin-top: 4pt; }
+  .skills { margin-top: 3pt; line-height: 10.6pt; font-size: 7.8pt; }
+  .skills li { margin-bottom: .6pt; }
+</style>
+</head>
+<body>
+  <div class="band"></div>
+  <img class="photo" src="photo.jpg" alt="Kenza El Baz" />
+  <h1 class="name">Kenza<br />EL BAZ</h1>
+  <p class="role">AI &amp; DATA SCIENCE ENGINEERING STUDENT</p>
+  <p class="summary">Final-year AI &amp; Data Science engineering student who takes machine learning from notebook to production. Combines deep learning and data analysis (TensorFlow/Keras, Scikit-learn, Pandas) with proven full-stack experience: built a natural-language analytics assistant, delivered an enterprise Angular/.NET application in 8 weeks, and cut SQL response times by 30%. Seeking a 4–6 month PFE internship (February – August 2027).</p>
+
+  <!-- ================= LEFT ================= -->
+  <aside class="left">
+    <h2 class="h h--plain">Contact</h2>
+    <ul class="contact">
+      <li><svg viewBox="0 0 24 24"><path d="M2 5h20v14H2z" fill="none"/><path d="M3 5h18a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1zm9 7.2L4 7.5V9l8 4.7L20 9V7.5z"/></svg><a href="mailto:kenzaelbaz0652@gmail.com">kenzaelbaz0652@gmail.com</a></li>
+      <li><svg viewBox="0 0 24 24"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57a1 1 0 0 1-.25 1z"/></svg><a href="tel:+212652841126">+212 652 84 11 26</a></li>
+      <li><svg viewBox="0 0 24 24"><path d="M12 2a7 7 0 0 0-7 7c0 5.25 7 13 7 13s7-7.75 7-13a7 7 0 0 0-7-7zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5z"/></svg><span>Rabat, Morocco</span></li>
+      <li><svg viewBox="0 0 24 24"><path d="M20.45 2H3.55A1.55 1.55 0 0 0 2 3.55v16.9A1.55 1.55 0 0 0 3.55 22h16.9A1.55 1.55 0 0 0 22 20.45V3.55A1.55 1.55 0 0 0 20.45 2zM8 19H5V9.5h3zM6.5 8.2a1.75 1.75 0 1 1 1.75-1.75A1.75 1.75 0 0 1 6.5 8.2zM19 19h-3v-4.6c0-1.1 0-2.5-1.5-2.5S12.7 13 12.7 14.3V19h-3V9.5h2.9v1.3a3.2 3.2 0 0 1 2.9-1.6c3.1 0 3.6 2 3.6 4.7z"/></svg><a class="wrap" href="https://www.linkedin.com/in/kenza-el-baz-750399256">linkedin.com/in/kenza-el-baz-<br />750399256</a></li>
+      <li><svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 0-3.16 19.49c.5.09.68-.22.68-.48v-1.7c-2.78.6-3.37-1.34-3.37-1.34a2.65 2.65 0 0 0-1.11-1.46c-.91-.62.07-.6.07-.6a2.1 2.1 0 0 1 1.53 1.03 2.13 2.13 0 0 0 2.91.83 2.14 2.14 0 0 1 .63-1.34c-2.22-.25-4.55-1.11-4.55-4.94a3.87 3.87 0 0 1 1.03-2.69 3.6 3.6 0 0 1 .1-2.65s.84-.27 2.75 1.02a9.47 9.47 0 0 1 5 0c1.91-1.29 2.75-1.02 2.75-1.02a3.6 3.6 0 0 1 .1 2.65 3.86 3.86 0 0 1 1.03 2.69c0 3.84-2.34 4.68-4.57 4.93a2.39 2.39 0 0 1 .68 1.85v2.74c0 .27.18.58.69.48A10 10 0 0 0 12 2z"/></svg><a href="https://github.com/kenza-elbaz">github.com/kenza-elbaz</a></li>
+      <li><svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 1 0 10 10A10 10 0 0 0 12 2zm6.9 6h-2.95a15.6 15.6 0 0 0-1.38-3.56A8 8 0 0 1 18.9 8zM12 4.04A14.1 14.1 0 0 1 13.9 8h-3.8A14.1 14.1 0 0 1 12 4.04zM4.26 14a7.8 7.8 0 0 1 0-4h3.38a16.5 16.5 0 0 0 0 4zm.82 2h2.95a15.6 15.6 0 0 0 1.38 3.56A8 8 0 0 1 5.08 16zM8.03 8H5.08a8 8 0 0 1 4.33-3.56A15.6 15.6 0 0 0 8.03 8zM12 19.96A14.1 14.1 0 0 1 10.1 16h3.8A14.1 14.1 0 0 1 12 19.96zM14.34 14H9.66a14.7 14.7 0 0 1 0-4h4.68a14.7 14.7 0 0 1 0 4zm.25 5.56A15.6 15.6 0 0 0 15.97 16h2.95a8 8 0 0 1-4.33 3.56zM16.36 14a16.5 16.5 0 0 0 0-4h3.38a7.8 7.8 0 0 1 0 4z"/></svg><a href="https://kenza-elbaz.github.io/portfolio">kenza-elbaz.github.io/portfolio</a></li>
+    </ul>
+
+    <section class="box" style="margin-top: 11pt;">
+      <h2 class="h chip">Education</h2>
+      <div class="edu-block">
+        <p class="edu-title">EMSI – École Marocaine des<br />Sciences de l'Ingénieur</p>
+        <p class="edu-deg">Engineering Degree in Computer Science – Artificial Intelligence &amp; Data Science (5th year)</p>
+        <p class="edu-when">2022–2027 · Rabat, Morocco</p>
+      </div>
+      <div class="edu-block">
+        <p class="edu-title">Lycée Scientifique Hassan</p>
+        <p class="edu-deg">Baccalaureate in Life and Earth Sciences (SVT)</p>
+        <p class="edu-when">2019–2022</p>
+      </div>
+    </section>
+
+    <h2 class="h h--plain" style="margin-top: 7pt;">Certifications</h2>
+    <section class="box certs" style="margin-left: 7pt;">
+      <p>Oracle Autonomous AI Database Certified Professional</p>
+      <p>Coursera</p>
+      <ul>
+        <li>IBM Python for Data Science &amp; AI</li>
+        <li>UCSD Big Data</li>
+        <li>HKUST Software Engineering</li>
+        <li>Johns Hopkins Unix/Linux</li>
+        <li>Google Agile PM</li>
+      </ul>
+    </section>
+
+    <section class="box" style="margin-top: 10pt; padding-top: 7pt; padding-bottom: 7pt;">
+      <h2 class="h chip">Languages</h2>
+      <ul class="langs">
+        <li>French: Fluent</li>
+        <li>English: C2</li>
+        <li>Arabic: Native</li>
+      </ul>
+    </section>
+
+    <h2 class="h h--plain" style="margin-top: 7pt;">Involvement</h2>
+    <ul class="involve">
+      <li>EMSI Student Ambassador</li>
+      <li>Media Manager, EMSI Student Union (BDE)</li>
+    </ul>
+  </aside>
+
+  <!-- ================= RIGHT ================= -->
+  <main class="right">
+    <section class="sec">
+      <h2 class="h h--right">Projects</h2>
+
+      <div class="item">
+        <p class="item-title">Brain Tumor Classification from MRI</p>
+        <p class="item-sub"><span class="caps">End-to-end ML pipeline</span> – <i>Python, PyTorch, Scikit-learn, FastAPI, Docker</i></p>
+        <ul class="bul">
+          <li>Audited 5,864 MRI scans (duplicates, train/test leakage) and built reproducible group-based splits</li>
+          <li>EfficientNet-B0 (PyTorch): 0.9746 macro-F1 and 97.84% test accuracy</li>
+          <li>Evaluation: confusion matrix, error analysis and Grad-CAM explainability</li>
+          <li>Served the model through a FastAPI inference API, with a Docker deployment setup</li>
+        </ul>
+      </div>
+
+      <div class="item">
+        <p class="item-title">Knowledge-Based Agent – Wumpus World</p>
+        <p class="item-sub"><i>Propositional logic, knowledge representation</i></p>
+        <ul class="bul">
+          <li>Implemented a logic-based agent that reasons over a knowledge base to plan safe, goal-oriented exploration</li>
+        </ul>
+      </div>
+
+      <div class="item">
+        <p class="item-title">Exploratory Data Analysis Pipeline</p>
+        <p class="item-sub"><i>Python, Pandas, NumPy, Matplotlib, Seaborn</i></p>
+        <ul class="bul">
+          <li>Cleaned large datasets (imputation, feature engineering) and ran statistical EDA with distribution and correlation plots</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="sec">
+      <h2 class="h h--right">Experience</h2>
+
+      <div class="item">
+        <p class="item-title">Torck (formerly Hahn Software) <span>· Rabat, Morocco</span></p>
+        <div class="item-row"><span class="caps">Software Engineering Internship (returning)</span><span class="date">July 2026 – Sept. 2026</span></div>
+        <ul class="bul">
+          <li>Developed Ask ATS, a natural-language analytics assistant that answers users' questions in plain language</li>
+          <li>Implemented multi-turn conversational context so follow-up questions build on earlier ones</li>
+        </ul>
+      </div>
+
+      <div class="item">
+        <p class="item-title">Torck (formerly Hahn Software) <span>· Rabat, Morocco</span></p>
+        <div class="item-row"><span class="caps">PFA Internship – Full-Stack Development</span><span class="date">July 2025 – August 2025</span></div>
+        <ul class="bul">
+          <li>Designed and built a secure RESTful API in .NET 7 with JWT authentication, covering 12+ endpoints</li>
+          <li>Optimized SQL queries on the relational database, cutting response times by 30%</li>
+          <li>Delivered the Angular/.NET enterprise application in 8 weeks in an Agile team of 4, with unit tests, code reviews and deployment to staging</li>
+        </ul>
+      </div>
+
+      <div class="item">
+        <p class="item-title">ANCFCC – National Land Registry Agency <span>· Rabat, Morocco</span></p>
+        <div class="item-row"><span class="caps">Internship – Systems &amp; Databases</span><span class="date">July 2023</span></div>
+        <ul class="bul">
+          <li>Analyzed Oracle cadastral databases (several million land records) and contributed to a security audit of citizen-data procedures</li>
+        </ul>
+      </div>
+    </section>
+
+    <h2 class="skills-h">Technical Skills</h2>
+    <ul class="bul skills">
+      <li><b>ML &amp; AI:</b> PyTorch, EfficientNet, CNNs, computer vision, Scikit-learn, evaluation (macro-F1, confusion matrix, error analysis), Grad-CAM, TensorFlow, Keras</li>
+      <li><b>Data:</b> Python, Pandas, NumPy, data preprocessing, dataset auditing, feature engineering, EDA, Matplotlib, Seaborn</li>
+      <li><b>Deployment &amp; backend:</b> FastAPI, Docker, REST APIs, JWT, .NET 7, Django, Node.js</li>
+      <li><b>Databases:</b> SQL, query optimization, relational database design, PostgreSQL, MySQL, Oracle</li>
+      <li><b>Tools &amp; languages:</b> Git, Linux, unit testing, Agile / Scrum, C/C++, JavaScript, TypeScript, Angular, React</li>
+    </ul>
+  </main>
+</body>
+</html>
